@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    <!-- GamePad PC reads the user-managed /storage/emulated/0/GamePadPC payload. -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" tools:node="remove" />
+    <!--
+        Wine creates AF_INET sockets for local IPC and interface discovery. Android
+        gates those syscalls behind INTERNET even when the app has no online clients
+        or remote endpoints. Keep the socket capability while the product remains
+        offline-only at the code and component boundaries.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:node="remove" />
+
+    <application
+        android:name=".PluviaApp"
+        android:debuggable="${gameFoldPcRunAsEnabled}"
+        android:usesCleartextTraffic="false"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:icon="${icon}"
+        android:isGame="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Pluvia"
+        android:allowAudioPlaybackCapture="true"
+        android:appCategory="game"
+        tools:ignore="HardcodedDebugMode"
+        tools:targetApi="29">
+        <!--
+         android:windowSoftInputMode must always be in the activity block.
+         IME padding with composables like 'Scaffold' will have terrible resizing consequences, if in the activity tag.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="${screenOrientation}"
+            android:resizeableActivity="false"
+            android:supportsPictureInPicture="false"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|navigation"
+            android:theme="@style/Theme.GameFoldPc.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="pluvia"
+                    android:scheme="home" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="app.gamenative.LAUNCH_GAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--Allows app window to be resized on Oculus Quest VR headsets-->
+            <meta-data
+                android:name="com.oculus.vrshell.supports_free_resizing"
+                android:value="true" />
+
+        </activity>
+
+        <!-- Launcher icon aliases to allow switching app icon at runtime -->
+        <activity-alias
+            android:name=".MainActivityAliasDefault"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/gamefold_pc_app_icon"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".MainActivityAliasAlt"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_alt"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!--
+            Handles the Exit action on foreground-service notifications.
+            See app.gamenative.service.NotificationActionReceiver for the rationale —
+            routing through a broadcast avoids the FGS contract that would otherwise
+            crash the app when Exit is tapped on a notification whose owning service
+            isn't currently running.
+        -->
+        <receiver
+            android:name=".service.NotificationActionReceiver"
+            android:exported="false" />
+
+        <!--
+            Development-only entry point for opening the existing in-game quick menu.
+            No intent filter is declared: callers must name this component explicitly,
+            and the signature-level DUMP permission restricts invocation to shell/system.
+        -->
+        <receiver
+            android:name=".diagnostics.AdbQuickMenuReceiver"
+            android:exported="true"
+            android:permission="android.permission.DUMP" />
+
+        <!-- FileProvider for secure file sharing (for APK installation) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

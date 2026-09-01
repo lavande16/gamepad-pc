@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GameFold NS 2.9 R2 display palette. The controller bezel keeps its existing PC asset. -->
+    <color name="gamefold_ns_home_surface">#F2F1ED</color>
+    <color name="gamefold_ns_surface">#FBFAF7</color>
+    <color name="gamefold_ns_surface_dark">#E2DED8</color>
+    <color name="gamefold_ns_text_dark">#1B1C1D</color>
+    <color name="gamefold_ns_text_secondary">#68635F</color>
+    <color name="gamefold_ns_border_ink">#787370</color>
+    <color name="gamefold_ns_action">#B65454</color>
+    <color name="gamefold_ns_action_shadow">#6F3636</color>
+</resources>

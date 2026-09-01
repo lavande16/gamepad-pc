@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="current_version">当前版本</string>
+    <string name="developer_website">开发者网站</string>
+    <string name="feedback_and_suggestions">反馈与建议</string>
+    <string name="gamefold_eden_disclaimer">基于 Wine、Winlator 及相关开源兼容层，仅用于个人 Vibe Coding、产品设计与技术研究，不涉及商业用途。项目中提及的第三方品牌、产品及相关商标均归其各自权利人所有，本项目与相关品牌不存在任何隶属、合作或授权关系。</string>
+</resources>

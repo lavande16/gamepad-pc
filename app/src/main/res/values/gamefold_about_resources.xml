@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gamefold_brand_mark" type="drawable">@drawable/gamefold_pc_app_icon</item>
+    <item name="about_xiaohongshu" type="drawable">@drawable/pixel_icon_xiaohongshu</item>
+    <item name="about_dribbble" type="drawable">@drawable/pixel_icon_website</item>
+
+    <string name="gamepad_about_product_name" translatable="false">GamePad</string>
+    <string name="current_version">Current version</string>
+    <string name="gamefold_developer_email" translatable="false">lavande.yongwei@gmail.com</string>
+    <string name="gamefold_copyright" translatable="false">© 2026 GameFold. All rights reserved.</string>
+    <string name="developer_website">Developer website</string>
+    <string name="website_link" translatable="false">https://gamefold.pages.dev</string>
+    <string name="xiaohongshu_link" translatable="false">https://xhslink.com/m/7Dgj0BeDUXM</string>
+    <string name="dribbble_link" translatable="false">https://dribbble.com/lavande</string>
+    <string name="feedback_and_suggestions">Feedback and suggestions</string>
+    <string name="xiaohongshu" translatable="false">REDnote</string>
+    <string name="dribbble" translatable="false">Dribbble</string>
+    <string name="gamefold_eden_disclaimer">🌴 Powered by the <i>Eden</i> open-source core. For personal Vibe Coding, product design, and technical research only; not for commercial use. Third-party brands, products, and trademarks mentioned in this project belong to their respective owners. This project has no affiliation, partnership, or authorization with those brands.</string>
+</resources>

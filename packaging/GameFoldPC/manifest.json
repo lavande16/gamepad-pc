@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "product": "GameFold PC",
+  "resourceRoot": "/storage/emulated/0/GameFoldPC",
+  "gameRoot": "game",
+  "containerVariant": "bionic",
+  "defaultExecutable": "GTAVLauncher.exe",
+  "defaultProton": "proton/proton-10.0-arm64ec.wcp",
+  "aliases": {
+    "Turnip v26.2.0 R4": "graphics/adrenotools-turnip26.0.0_R4.tzst",
+    "adrenotools-Turnip v26.2.0 R4.tzst": "graphics/adrenotools-turnip26.0.0_R4.tzst",
+    "graphics_driver/adrenotools-Turnip v26.2.0 R4.tzst": "graphics/adrenotools-turnip26.0.0_R4.tzst",
+    "proton-10.0-arm64ec-2_container_pattern": "containers/container_pattern_gamenative.tzst",
+    "proton-10.0-arm64ec-2_container_pattern.tzst": "containers/container_pattern_gamenative.tzst"
+  },
+  "required": [
+    { "path": "imagefs/imagefs_bionic.txz", "category": "imagefs", "version": "bionic", "size": 183506500, "sha256": "368db62bfc58b72c97e5169bda9aa64d4246f07964c447e27c79a065e7e9c48b" },
+    { "path": "proton/proton-10.0-arm64ec.wcp", "category": "proton", "version": "10.0-arm64ec", "size": 262671004, "sha256": "c1638b1f830304222660e338bc032099145ad210d4e36a07d91f39c750a062f7" },
+    { "path": "containers/container_pattern_common.tzst", "category": "container", "version": "common", "size": 41560575, "sha256": "90a79ceb52093c8aa713b0df7ce3c98a63e5a144631f88d32883065db1f7b4b9" },
+    { "path": "containers/container_pattern_gamenative.tzst", "category": "container", "version": "gamenative", "size": 9932192, "sha256": "f19a9e7280df753c0ea197ca8aaee46aa31de9ee2d7e59de3a5870132d0001fd" },
+    { "path": "containers/fexcore/fexcore-2605.tzst", "category": "fexcore", "version": "2605", "size": 1544380, "sha256": "2de0a0502190bfc96e62f1f9a252dec9cd81b59c3fbda763dfc5bea812afd437" },
+    { "path": "containers/runtime/redirect.tzst", "category": "runtime", "version": "redirect", "size": 33179, "sha256": "99e578bff9884ad59ef8eec89b0df78d55103979eff8333ab4041bc3f11390ab" },
+    { "path": "containers/runtime/pulseaudio-gamenative-20260612.tzst", "category": "runtime", "version": "20260612", "size": 78340, "sha256": "357bb53fbcf91ab2adcd2e6a4b7fc3f2cb95f1555610681b08dbf6d412ac4bd8" },
+    { "path": "containers/runtime/arm64ec_input_dlls.tzst", "category": "runtime", "version": "arm64ec", "size": 558954, "sha256": "a60e381bbac0c1565449fb03b948e8ec4075f39b9fe1bab859a9f150b43ebce9" },
+    { "path": "containers/runtime/x86_64_input_dlls.tzst", "category": "runtime", "version": "x86_64", "size": 415584, "sha256": "b877ae67f6df33dd5a5a0ef2d7078be515cf8078a5dc49db51fc9395834c11ee" },
+    { "path": "containers/experimental-drm-20260116.tzst", "category": "runtime", "version": "20260116", "size": 13961692, "sha256": "0d40e7a0f39054d89bfb7e7a641cf715fd2662abae387ddaddc42d38ffbaf191" },
+    { "path": "containers/config/fexcore_env_vars.json", "category": "config", "version": "1", "size": 1569, "sha256": "cc36287e755ca38b9f5caeacecce70abbfcc5bdfabf8c0f632af41415651e11d" },
+    { "path": "containers/config/wincomponents_download.json", "category": "config", "version": "1", "size": 1663, "sha256": "9f36f2ed8faa302c21a18c09772c237ebe015ce3dddb0abe582da596fb196692" },
+    { "path": "graphics/adrenotools-turnip26.0.0_R4.tzst", "category": "turnip", "version": "Turnip v26.2.0 R4", "size": 3211505, "sha256": "ed1104cbf4387e28638c52959c651f6302fc515761289e104ab2953977bd1ba4" },
+    { "path": "dxvk/dxvk-2.4.1-gplasync.tzst", "category": "dxvk", "version": "2.4.1-gplasync", "size": 9131308, "sha256": "7684a19e733310f9e3613a5ecd3443edb97c2d8c8a0e5db0d682887153e5058d" },
+    { "path": "dxvk/d8vk-1.0.tzst", "category": "dxvk", "version": "1.0", "size": 1128672, "sha256": "5e18deb3deedc937dad9974013c2039f8110f9baf6a520c4310ec888d8a59511" },
+    { "path": "vkd3d/vkd3d-2.14.1.tzst", "category": "vkd3d", "version": "2.14.1", "size": 2352920, "sha256": "b17d32de8178201f15a49ac5cd137778f8477c7fe75343963e2158b86a8159ba" },
+    { "path": "wincomponents/extras.tzst", "category": "wincomponents", "version": "extras", "size": 85987690, "sha256": "d47d2c0e12f4f59beb3e4a80ed9e7373a15fc7cc796d406fd6f18d0f58249184" },
+    { "path": "wincomponents/wincomponents.json", "category": "wincomponents", "version": "1", "size": 1943, "sha256": "21943e33658e3b28c1346bf283f10e7674e8e6783d39d057db4575d9ea73e661" },
+    { "path": "wincomponents/ddraw.tzst", "category": "wincomponents", "version": "ddraw", "size": 166133, "sha256": "eabb2d59ce7060767996d0c9597ee8772059126a3af01698e59a5e7905e49867" },
+    { "path": "wincomponents/direct3d.tzst", "category": "wincomponents", "version": "direct3d", "size": 31207067, "sha256": "149d55436e050bfa3fe8caf650cb97ddb2bc9fa99cd96869bd2bc4977b708fb5" },
+    { "path": "wincomponents/directmusic.tzst", "category": "wincomponents", "version": "directmusic", "size": 337109, "sha256": "eb906732d14766641edfae0b2d722c36f4632de7fa321a5844037115b513b77e" },
+    { "path": "wincomponents/directplay.tzst", "category": "wincomponents", "version": "directplay", "size": 429728, "sha256": "70eb81449230af66286f5b4d5922dca13057600c35d4cdfe91930e966c2386d9" },
+    { "path": "wincomponents/directshow.tzst", "category": "wincomponents", "version": "directshow", "size": 2209278, "sha256": "aa682b7ee6e5903e4571bfe5a8dc9b05d0a9f05cd860cfdc810f2ddd3745e9b4" },
+    { "path": "wincomponents/directsound.tzst", "category": "wincomponents", "version": "directsound", "size": 434853, "sha256": "72f0e880eef1387a55602ac02b07ef26778d23c2f70d931bd2d13e92f8dc99d4" },
+    { "path": "wincomponents/openal.tzst", "category": "wincomponents", "version": "openal", "size": 6272189, "sha256": "5e849dd182eb7361624804d508b52713dcbf8f203355e062a5928b843b3b4a47" },
+    { "path": "wincomponents/opengl.tzst", "category": "wincomponents", "version": "opengl", "size": 8170693, "sha256": "efe27f0de6a55bfb6c2e9eab79b6baaae64b35af81ce49c097de6b720f258cbb" },
+    { "path": "wincomponents/vcrun2010.tzst", "category": "wincomponents", "version": "vcrun2010", "size": 1038731, "sha256": "9def7b4b5c31c839d155f05e372e0e9ce4968b57f815c1abf93b7735e7d0ceb7" },
+    { "path": "wincomponents/wmdecoder.tzst", "category": "wincomponents", "version": "wmdecoder", "size": 1717472, "sha256": "a2ca365cc43265680ee71a7b13a4626ed02368feec135571fb841c7b4abf62d1" },
+    { "path": "wincomponents/xaudio.tzst", "category": "wincomponents", "version": "xaudio", "size": 2329991, "sha256": "2f80fd6242136b543ee2e1c8fb7daa9c0bcd0c318886ca502f84f456c83bbc43" }
+  ],
+  "notes": [
+    "The game folder is intentionally not included in this payload.",
+    "Place the complete PC game directory under game/ or select it from the app.",
+    "ImageFS and Proton are unpacked into private storage only from these local archives.",
+    "The Turnip alias records the exact container label to the verified local archive; no version fallback is used for this package.",
+    "The Proton container-pattern alias points to the locally verified GameNative-compatible prefix pack; no network download is used."
+  ]
+}
+

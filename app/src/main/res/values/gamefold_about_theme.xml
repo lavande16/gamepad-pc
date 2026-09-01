@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GameFoldNsAboutHost" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pixel_action</item>
+        <item name="colorOnPrimary">@color/pixel_text_light</item>
+        <item name="colorPrimaryContainer">@color/pixel_surface_slate_dark</item>
+        <item name="colorOnPrimaryContainer">@color/pixel_text_dark</item>
+        <item name="colorSecondary">@color/pixel_focus</item>
+        <item name="colorOnSecondary">@color/pixel_text_dark</item>
+        <item name="colorSecondaryContainer">@color/pixel_surface_slate_dark</item>
+        <item name="colorOnSecondaryContainer">@color/pixel_text_dark</item>
+        <item name="android:colorBackground">@color/pixel_home_surface</item>
+        <item name="colorOnBackground">@color/pixel_text_dark</item>
+        <item name="colorSurface">@color/pixel_surface_slate</item>
+        <item name="colorOnSurface">@color/pixel_text_dark</item>
+        <item name="colorSurfaceVariant">@color/pixel_surface_slate_dark</item>
+        <item name="colorOnSurfaceVariant">@color/pixel_text_secondary</item>
+        <item name="colorOutline">@color/pixel_border_ink</item>
+        <item name="colorOutlineVariant">@color/pixel_surface_slate_dark</item>
+        <item name="colorError">@color/pixel_danger</item>
+        <item name="colorOnError">@color/pixel_text_light</item>
+    </style>
+</resources>

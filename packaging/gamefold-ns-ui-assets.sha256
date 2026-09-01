@@ -1,0 +1,3 @@
+# Task 1 intentionally copies no NS UI assets. Task 5 appends one SHA-256 row
+# per copied binary asset in the conventional "<sha256>  <relative path>" form.
+# The frozen APK identity is guarded by test_gamefold_integration_baselines.sh.

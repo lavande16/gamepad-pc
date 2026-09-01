@@ -1,0 +1,41 @@
+{
+  "capturedAt": "2026-08-13",
+  "device": {
+    "serial": "10AF3P0SDY001M6",
+    "model": "vivo V2436A",
+    "displayId": "4630946685006800003",
+    "resolution": "2480x2200",
+    "orientation": "landscape"
+  },
+  "references": {
+    "ns": {
+      "package": "com.switch.fold.baseline.lite",
+      "versionName": "2.9",
+      "versionCode": 33466084,
+      "apkSha256": "156c340360ea4a988fd8cde5c0282a1ebe3585ecfb77457109b1770ea2768292"
+    },
+    "pc": {
+      "package": "com.gamefold.pc.v066nsrc.r16",
+      "versionName": "0.6.6-gf-ns-r16.6",
+      "versionCode": 10079,
+      "baselineVersionCode": 10072,
+      "baselineApkSha256": "dc79f8c3d3e21a9bba841c449c4871a5de5ab5790b2672d49c15e48141ad1e39"
+    }
+  },
+  "screenshots": {
+    "ns-home.png": "9b1a711e6dea064eca5472ca50d9384ba646c15631f8101b010f34deb9b90b7d",
+    "pc-home.png": "add8a2c0948dd65b7e76bb05045c8f877735175310f987d7d7da447f63d813a4",
+    "ns-settings.png": "0e96b169c73d9f0eb2561686f99009499c9109ad57c1ee63ec37346426c89aa8",
+    "pc-settings.png": "414a1d3130893b29f8833c4312460daffda6258037a61daa95a9e3642d7de20f",
+    "pc-advanced.png": "414a1d3130893b29f8833c4312460daffda6258037a61daa95a9e3642d7de20f",
+    "pc-add-game.png": "cf32ac8f84dce53a18b9a220a2892e7cdaeaac0bfed1e6b43e140c9c846bb169",
+    "ns-game-settings.png": "21581a0da9b6c74bbf0a17964f653b700d660e27d4cb24b890f54970cd324148",
+    "pc-game-settings.png": "c6d986bcb49ea76e1768f02d333ff79a8a4edf2fb6a0202814f4c03991285e59",
+    "pc-container-settings.png": "666dcb8ef8756cd399b2b6bc5256b6f56a8af6b7f88c2313de214cb43f8bfec0",
+    "ns-loading.png": "b37b7ba5cbd020e905f351d36f049c65675034e3db5767b2e01c4f357eee36f0",
+    "pc-loading.png": "b4dc1cceb14d122e121d06d07daea2b391a2a56dddf975427e6380a5388afc16",
+    "pc-runtime.png": "2bbb49c526b2b0fb56212b31678280ab19fb411a44e8ca95614e79cc8897054a2",
+    "pc-back-warning.png": "c6f0600561737ea1c5105bab9effeaa79fe8d948262e125ba0bf4e90b6f664f0",
+    "pc-permission.png": "402a7f02e1244684107762548afc440bd715df74ac1091299bfb24a4a15a4786"
+  }
+}

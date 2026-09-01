@@ -1,0 +1,24 @@
+--------- beginning of main
+08-15 16:43:25.652 20613 20613 I GameFoldRear: reconcile#8 desired=dual reason=manual-on systemDual=false
+08-15 16:43:25.705 20613 20641 I GameFoldRear: reconcile#8 enable display 2=true state 100=true
+08-15 16:43:25.717 20613 20613 I GameFoldRear: begin paired rear Activity transition generation=8
+08-15 16:43:25.742 20613 20613 I GameFoldRear: reconcile#8 start rear Activity reason=manual-on display=3
+08-15 16:43:25.743 20613 20613 I GameFoldRear: defer user-leave hint during paired rear Activity transition
+08-15 16:43:25.757 20613 20613 I GameFoldRear: rear Activity ready display=3
+08-15 16:43:25.757 20613 20613 I GameFoldRear: rear Activity ready; paired transition settle scheduled generation=8
+08-15 16:43:25.772 20613 20613 I GameFoldRear: rear Activity already active; skip dual reconcile reason=configuration-changed
+08-15 16:43:25.963 20613 20641 I GameFoldRear: reconcile#8 dual ready reason=manual-on display=true powerReset=true rearActivity=true
+08-15 16:43:25.981 20613 20613 I GameFoldRear: rear Activity ready display=3
+08-15 16:43:25.981 20613 20613 I GameFoldRear: rear Activity ready; paired transition settle scheduled generation=8
+08-15 16:43:25.987 20613 20613 I GameFoldRear: front window focus lost; background check scheduled
+08-15 16:43:26.004 20613 20613 I GameFoldRear: rear Activity already active; skip dual reconcile reason=configuration-changed
+08-15 16:43:26.011  3020  3156 I ActivityTaskManager: Displayed com.gamefold.pc/app.gamenative.gamefold.rear.GameFoldRearTouchActivity for user 0: +288ms
+08-15 16:43:26.019 20613 20641 I GameFoldRear: outer power after rear-activity-ready: enable=true reset=true
+08-15 16:43:26.050 20613 20641 I GameFoldRear: outer power after rear-activity-ready: enable=true reset=true
+08-15 16:43:26.263 20613 20641 I GameFoldRear: outer power after rear-resumed: enable=true reset=true
+08-15 16:43:26.631 20613 20613 I GameFoldRear: finish paired rear Activity transition generation=8 reason=rear-activity-settled decision=KEEP_SESSION
+08-15 16:43:27.022 20613 20641 I GameFoldRear: outer power after rear-rotation-settled: enable=true reset=true
+08-15 16:43:42.939 20613 20613 I GameFoldRear: all front activities stopped -> disable rear session
+08-15 16:43:42.939 20613 20613 I GameFoldRear: reconcile#9 desired=single reason=front-activities-stopped systemDual=true
+08-15 16:43:42.952 20613 20613 I GameFoldRear: rear shutdown blank committed display=3
+08-15 16:43:42.988 20613 20641 I GameFoldRear: reconcile#9 single ready reason=front-activities-stopped reset=true displayDisabled=true

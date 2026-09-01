@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gamefold_icon_background">#202125</color>
+    <color name="gamefold_splash_wordmark_shadow">#08090B</color>
+    <color name="gamefold_splash_background">#15161A</color>
+    <color name="pixel_text_light">#FBFAF7</color>
+</resources>

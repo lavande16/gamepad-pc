@@ -1,0 +1,63 @@
+{
+  "product": "GamePad PC",
+  "baseline": "V2.4-2304X1296-10033",
+  "basedOn": {
+    "baseline": "V2.4-2304X1296-10032",
+    "apk": "../GamePad-PC-V2.4-10032/GamePad-PC-V2.4-2304X1296-10032.apk",
+    "sha256": "a36d5f2cf2d511be8a26a2e346c8e6bc82eb221c0c38ce16777e8c4a92b5f4fe"
+  },
+  "sourceBranch": "codex/gamepad-pc-v2.4-10031-geometry",
+  "sourceCommit": "958a3414ad9fe445c24518bfba6d62ab5d1a36eb",
+  "gitTag": "gamepad-pc-v2.4-10033-baseline",
+  "apk": "GamePad-PC-V2.4-2304X1296-10033.apk",
+  "sha256": "f3b8cbb53d712537e00083ca8b7164592b0b2204f63bfb7e1a6dc8af9cb17b31",
+  "sizeBytes": 16322956,
+  "applicationId": "com.gamepad.pc",
+  "versionName": "2.4",
+  "versionCode": 10033,
+  "minSdk": 26,
+  "targetSdk": 28,
+  "debuggable": true,
+  "runAs": true,
+  "downloadUrl": "https://dl.3dmgame.com/all_all_1_hot_cn/",
+  "displayProfile": {
+    "landscapeTarget": "2304x1296",
+    "gameResolutionEntry": "2304x1296 (16:9)",
+    "windowWhitelist": ["2304x1440", "2304x1296", "1920x1080"],
+    "controllerTransform": {
+      "native2304x1440": {"scale": 1.0, "translateX": 0.0, "translateY": 0.0},
+      "target2304x1296LowerControls": {"scale": 1.0, "translateX": 0.0, "translateY": -72.0},
+      "target2304x1296HomeLogo": {"scale": 1.0, "translateX": 0.0, "translateY": 0.0},
+      "logoDeltaFrom10032Px": 72
+    }
+  },
+  "signature": {
+    "scheme": "v2",
+    "certificateSha256": "24a37be7ed0f0431fde44018312271152545d689bb3d1fbe9fbf92914bdf84b4"
+  },
+  "verification": {
+    "unitTests": 577,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "deviceInstallation": "passed",
+    "deviceSerial": "403G8G00BM611V0",
+    "deviceModel": "iPA2693",
+    "installedVersionName": "2.4",
+    "installedVersionCode": 10033,
+    "firstInstallTime": "2026-08-21 16:17:17",
+    "lastUpdateTime": "2026-08-31 13:24:25",
+    "manageExternalStorage": "allow",
+    "writeSecureSettings": "granted",
+    "runAsUid": 10276,
+    "installedApkSha256": "f3b8cbb53d712537e00083ca8b7164592b0b2204f63bfb7e1a6dc8af9cb17b31",
+    "installedApkByteMatched": true,
+    "displayOverride": "2304x1296",
+    "launchGate2304x1296": "passed"
+  },
+  "rollback": {
+    "baseline": "V2.4-2304X1296-10032",
+    "apk": "../GamePad-PC-V2.4-10032/GamePad-PC-V2.4-2304X1296-10032.apk",
+    "sha256": "a36d5f2cf2d511be8a26a2e346c8e6bc82eb221c0c38ce16777e8c4a92b5f4fe"
+  }
+}

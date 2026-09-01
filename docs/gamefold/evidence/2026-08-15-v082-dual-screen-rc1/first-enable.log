@@ -1,0 +1,24 @@
+--------- beginning of main
+08-15 16:25:43.013 19123 19123 I GameFoldRear: rear display support=true manufacturer=vivo brand=vivo
+08-15 16:25:43.013 19123 19123 I GameFoldRear: reconcile#1 desired=single reason=process-start systemDual=false
+08-15 16:25:43.053 19123 19153 I GameFoldRear: reconcile#1 single ready reason=process-start reset=true displayDisabled=true
+08-15 16:25:43.262  3020  3156 I ActivityTaskManager: Displayed com.gamefold.pc/app.gamenative.MainActivityAliasDefault for user 0: +338ms
+08-15 16:26:09.647 19123 19123 I GameFoldRear: reconcile#2 desired=dual reason=manual-on systemDual=false
+08-15 16:26:09.694 19123 19153 I GameFoldRear: reconcile#2 enable display 2=true state 100=true
+08-15 16:26:10.184 19123 19123 I GameFoldRear: begin paired rear Activity transition generation=2
+08-15 16:26:10.200 19123 19123 I GameFoldRear: reconcile#2 start rear Activity reason=manual-on display=3
+08-15 16:26:10.201 19123 19123 I GameFoldRear: defer user-leave hint during paired rear Activity transition
+08-15 16:26:10.216 19123 19123 I GameFoldRear: rear Activity ready display=3
+08-15 16:26:10.216 19123 19123 I GameFoldRear: finish paired rear Activity transition generation=2 reason=rear-activity-ready decision=KEEP_SESSION
+08-15 16:26:10.224 19123 19123 I GameFoldRear: rear Activity already active; skip dual reconcile reason=configuration-changed
+08-15 16:26:10.237 19123 19123 I GameFoldRear: rear Activity already active; skip dual reconcile reason=front-resumed
+08-15 16:26:10.571 19123 19123 I GameFoldRear: front window focus lost; background check scheduled
+08-15 16:26:10.576 19123 19123 I GameFoldRear: front user leave scheduled reason=main-user-leave
+08-15 16:26:10.585 19123 19153 I GameFoldRear: reconcile#2 dual ready reason=manual-on display=true powerReset=true rearActivity=true
+08-15 16:26:10.615  3020  3156 I ActivityTaskManager: Displayed com.gamefold.pc/app.gamenative.gamefold.rear.GameFoldRearTouchActivity for user 0: +411ms
+08-15 16:26:10.633 19123 19153 I GameFoldRear: outer power after rear-activity-ready: enable=true reset=true
+08-15 16:26:10.861 19123 19153 I GameFoldRear: outer power after rear-resumed: enable=true reset=true
+08-15 16:26:11.021 19123 19123 I GameFoldRear: front window focus lost with no replacement -> disable rear session
+08-15 16:26:11.021 19123 19123 I GameFoldRear: reconcile#3 desired=single reason=front-window-focus-lost systemDual=true
+08-15 16:26:11.029 19123 19123 I GameFoldRear: rear shutdown blank committed display=3
+08-15 16:26:11.061 19123 19153 I GameFoldRear: reconcile#3 single ready reason=front-window-focus-lost reset=true displayDisabled=true
