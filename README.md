@@ -1,14 +1,19 @@
 # GamePad PC
 
+
 > **把掌机变成趁手的 PC 游戏触控手柄。**  
 > Turn your handheld into a practical touch controller for PC gaming.
 
-<p align="center"><img src="https://gamefold.pages.dev/assets/product/fold-gameplay.webp" alt="GameFold 家族产品的折叠屏掌机游戏场景（官网宣传图，非 GamePad PC 实机截图）" width="92%"></p>
-<p align="center"><sub>GameFold 家族官网宣传图 · GameFold family artwork; not a GamePad PC screenshot</sub></p>
+
+<p align="center"><img src="gamepad-pc.png" alt="GamePad PC 游戏库界面 / GamePad PC library screenshot" width="92%"></p>
+<p align="center"><sub>GamePad PC 游戏库截图 · GamePad PC library screenshot</sub></p>
+
 
 <p align="center"><a href="https://gamefold.pages.dev">产品官网 / Official site</a> · <a href="https://github.com/lavande16/gamepad-pc-private/releases/tag/gamepad-pc-2.4-10033">下载 V2.4 / Download</a></p>
 
+
 ## 当前基线 · Current baseline
+
 
 | 项目 | 信息 |
 |---|---|
@@ -18,7 +23,9 @@
 | SHA-256 | `f3b8cbb53d712537e00083ca8b7164592b0b2204f63bfb7e1a6dc8af9cb17b31` |
 | 显示配置 | 2304 × 1296 基线配置 |
 
+
 ## 为掌机触控而设计 · Designed for handheld touch
+
 
 - **一眼看清游戏区域与触控区：**V2.4 以 2304 × 1296 显示配置为基线，并为横向握持下方的触控操作留出空间。显示表现会因设备、系统和外接屏而异。  
   **Keep the game and controls in view:** V2.4 uses a 2304 × 1296 display profile and leaves room for touch controls along the lower area in landscape play. Results vary by device, system and external display.
@@ -29,28 +36,16 @@
 - **保留社区与设置入口：**项目包含 3DM 相关入口和显示设置；网络内容与第三方服务由其提供方负责。  
   **Community and display settings:** the app retains a 3DM-related entry and display controls. Online content and third-party services are provided by their respective owners.
 
+
 > 本仓库保留 GamePad PC V2.4 的源码和继续开发所需的运行时归档。Release APK 放在 GitHub Release，不放进 Git 历史；运行时归档位于 `app/src/legacy/assets/`。仓库不包含商业游戏文件。  
 > This repository preserves the GamePad PC V2.4 source and the runtime archive required for continued development. The APK is distributed through GitHub Releases, not Git history; the runtime archive is under `app/src/legacy/assets/`. Commercial game files are not included.
 
+
 ## 下载与继续开发 · Download and continue development
+
 
 从 [V2.4 Release](https://github.com/lavande16/gamepad-pc-private/releases/tag/gamepad-pc-2.4-10033) 获取基线 APK；从仓库的源码、`app/src/legacy/assets/` 和项目构建配置继续开发。签名材料和本机生成文件不属于此备份。  
 Download the baseline APK from the [V2.4 Release](https://github.com/lavande16/gamepad-pc-private/releases/tag/gamepad-pc-2.4-10033). Continue from the source, `app/src/legacy/assets/` and project build configuration. Signing material and machine-generated files are not part of this backup.
 
+
 实际兼容性因设备与游戏而异。请只使用自己有权访问的游戏内容；GamePad PC 与第三方游戏、网站或品牌没有官方隶属关系。  
-Compatibility varies by device and game. Use only game content you are entitled to access. GamePad PC is not officially affiliated with third-party games, websites or brands.
-
-## GameFold 产品矩阵 · Product family
-
-| 产品线 / Product | 仓库 / Repository | 官网 / Website |
-|---|---|---|
-| GameFold NS | [gamefold-ns-private](https://github.com/lavande16/gamefold-ns-private) | [GameFold](https://gamefold.pages.dev) |
-| GamePad NS | [gamepad-ns-private](https://github.com/lavande16/gamepad-ns-private) | [GameFold](https://gamefold.pages.dev) |
-| GameFold PC | [gamefold-pc-private](https://github.com/lavande16/gamefold-pc-private) | [GameFold](https://gamefold.pages.dev) |
-| GamePad PC | [gamepad-pc-private](https://github.com/lavande16/gamepad-pc-private) | [GameFold](https://gamefold.pages.dev) |
-| GameFold FC | [gamefold-fc-private](https://github.com/lavande16/gamefold-fc-private) | [GameFold FC](https://game-fold.pages.dev) |
-| GamePad PS | [gamepad-ps-private](https://github.com/lavande16/gamepad-ps-private) | [GameFold](https://gamefold.pages.dev) |
-
----
-
-<p align="center"><sub>私有源码与基线备份 · Private source and baseline backup · 第三方品牌归各自权利人所有 · Third-party names belong to their respective owners</sub></p>
