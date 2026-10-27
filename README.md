@@ -1,8 +1,8 @@
 # GamePad PC
 
 
-> **在掌机上整理并启动本地 PC 游戏。**  
-> Organize and launch local PC games on your handheld.
+> **在 Android 平板上整理并启动本地 PC 游戏。**  
+> Organize and launch local PC games on an Android tablet.
 
 
 <p align="center"><img src="gamepad-pc.png" alt="GamePad PC 游戏库界面 / GamePad PC library screenshot" width="92%"></p>
@@ -24,7 +24,7 @@
 | 显示配置 | 2304 × 1296 基线配置 |
 
 
-## 为掌机触控而设计 · Designed for handheld touch
+## 为平板触控而设计 · Designed for tablet touch
 
 
 - **一眼看清游戏区域与触控区：**V2.4 以 2304 × 1296 显示配置为基线，并为横向握持下方的触控操作留出空间。显示表现会因设备、系统和外接屏而异。  
